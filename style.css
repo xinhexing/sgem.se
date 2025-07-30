@@ -2,22 +2,23 @@
 
 :root {
     /* Colors */
-    --blue_dark: #142638;
-    --blue_light: #1a3050;
-    --yellow: #ffd381;
-    --yellow_dark: #e9ad3d;
-    --cream: #e8e3d1;
+    --dark: #141414;
+    --dark_grey: #3d3b38;
+    --light_grey: #e5dccd;
+    --light: #fff7ea;
+    --green: #8cbd6b;
+    --dark_green: #2e6d67;
 
-    --highlight: var(--yellow_dark);
-    --bg_light: var(--yellow);
-    --bg_dark: var(--blue_light);
+    --highlight: var(--green);
+    --bg_light: var(--light_grey);
+    --bg_dark: var(--dark_grey);
 
-    --black: var(--blue_dark);
-    --white: #ffffff;
+    --black: var(--dark);
+    --white: var(--light);
     
     /* Fonts */
-    --body-font: "Open Sans", sans-serif;;
-    --title-font: "Raleway", sans-serif;
+    --body-font: "Inter", sans-serif;;
+    --title-font: "Inter", sans-serif;
 
     /* Dimensions */
     --content_width: 900px;
