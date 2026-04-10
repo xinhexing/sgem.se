@@ -7,14 +7,18 @@
   <meta name="description" content="" />
   <title>SGEM</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/8068b40d82.js" crossorigin="anonymous"></script>
   
+  <!-- Flickity -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
   
   <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -23,14 +27,15 @@
 <body>
 
   <div class="header">
-    <h1>SGEM</h1>
+     <img src="images/logo_full_light.png" alt="SGEM Logo">
   </div>
 
   <input type="checkbox" class="navigation toggle dropdown-toggle hide" id="nav-top-checkbox">
   <label for="nav-top-checkbox" class="fa-solid" id="nav-top-label"></label>
   <div class="navigation menu dropdown-menu" id="nav-top-menu">
     <a href="#about" class="section-link section-highlight">About</a>
-    <a href="#join-sgem" class="section-link">Join SGEM</a>
+    <a href="#activities" class="section-link">Activities</a>
+    <a href="#join" class="section-link">Join</a>
     <a href="#members" class="section-link">Members</a>
     <a href="#contact" class="section-link">Contact</a>
   </div>
@@ -39,7 +44,8 @@
     
     <div class="navigation menu" id="nav-side">
       <a href="#about" class="section-link section-highlight">About</a>
-      <a href="#join-sgem" class="section-link">Join SGEM</a>
+      <a href="#activities" class="section-link">Activities</a>
+      <a href="#join" class="section-link">Join</a>
       <a href="#members" class="section-link">Members</a>
       <a href="#contact" class="section-link">Contact</a>
     </div>
@@ -48,43 +54,111 @@
 
       <div id="about" class="section">
         <h1>About SGEM</h1> 
-        <p>The iGEM Stockholm teams are unique in many ways. An important feature is that iGEM Stockholm - with great support from advisors - is driven entirely by the team as an extracurricular project. Participating students can come from any course, program or university in Stockholm. This independence leads to complete freedom for the team to not only choose its very own research project, but also which experts and sponsors to approach for support and guidance. However, the annual renewal of the team would, without support, result in a lack of consistency and might eventually lead to discontinuation. Every new team would have to start completely from scratch, and would thus be wasting valuable support from iGEM Stockholm alumni. To address this issue, SGEM was created.
-          
-        SGEM stands for Stockholm Genetically Engineered Machines and is a non-profit association founded in 2015 to ensure annual participation of a team from Stockholm in the iGEM competition.
+        <p><b>SGEM</b> (Stockholm Genetically Engineered Machines) is a non-profit association founded by alumni in 2015. Our mission is to support students in Stockholm participating in the iGEM (International Genetically Engineered Machine) Competition. We provide the structure, continuity, and network that enables each new team to build on the experience of the previous one. As the organisation grows, we aim to build stronger links between emerging talent and the life science sector across Stockholm and Sweden.</p>
         
-        The SGEM association consists of previous and current members of iGEM Stockholm. The board of SGEM, which operates the association, is chosen democratically on the annual meeting of the association. The main purpose of SGEM is to support iGEM Stockholm teams and to provide a platform for the public and the members of SGEM to engage in synthetic biology. More specifically, this involves support in recruiting the new iGEM team to ensure a smooth transition from one year to another, being a legal entity to facilitate administrative and financial affairs, and to hand over knowledge in support of their iGEM journey.</p>
+        <h2>iGEM Competition</h2>
         
-        <h2>Recruitment</h2>
-        
-        <p>SGEM is responsible for organising the recruitment of the new iGEM Stockholm team. More specifically, the association elects the new team leader(s), who in turn will be responsible for selecting their new team members. During this period, SGEM offers valuable input and support to the new leader(s) about essential aspects of recruiting an iGEM team such as how to perform interviews, evaluate the candidates and what characteristics to look for.</p>
+        <p>The iGEM (International Genetically Engineered Machine) Competition is the world's largest synthetic biology competition. Each year, student teams from around the world design and build innovative biological solutions to solve real-world problems. Their projects integrate biology, engineering, and computational methods to address challenges in health, sustainability, food systems, and the environment. The teams then present their work at the Grand Jamboree (in Paris), where they showcase their projects and compete with teams globally.</p>
 
-        <h2>Legal entity</h2>
+        <h2>Team Stockholm</h2>
         
-        <p>Finance is of major importance to any iGEM team. Unlike many other iGEM teams, the Stockholm team is not associated with a single university, a specific professor, or even a particular group of students. Consequently, each iGEM Stockholm team is independent and determined solely by the individual team members of that year. In order to facilitate financial affairs and the administrative handover from one iGEM year to another, SGEM acts as the official legal entity behind each iGEM Stockholm team.</p>
-        
-        <h2>Mentorship</h2>
-        
-        <p>Once the new iGEM Stockholm team has been recruited and prepared for the upcoming journey, there is a great deal to learn about the iGEM competition. In support of the team's iGEM journey, SGEM is a soundboard which the current team members can turn to for everything iGEM-related such as technicalities of the competition or practicalities such as daily lab work and how to approach sponsors. Previous iGEM members have even served as advisors, assisting the team according to their expertise.</p>
+        <p>Each year, SGEM recruits students from universities across Stockholm to form the iGEM Stockholm team. Participating in the team offers a unique opportunity to work on a fully student-driven project while gaining hands-on experience in research, collaboration, and innovation.</p>
+
+        <b class="center">Want to know what our current team is up to?</b>
+        <a href="https://igem.se/" target="_blank" class="center"><button>Visit iGEM Stockholm</button></a>
 
       </div>
 
-      <div id="join-sgem" class="section">
-        <h1>Join SGEM</h1>
-        <p>Become an SGEM member by filling out the following form:</p>
-        <a href="https://ebas.ungaforskare.se/blimedlem/sgem" target="_blank" class="center"><button>Join SGEM</button></a>
-        <!-- <a href="#" class="center"><button>Apply now</button></a> -->
-        <p>Looking for iGEM Stockholm instead? Applications for the next iGEM Stockholm team can be found from iGEM Stockholm's homepage.</p>
-        <a href="https://igem.se/" target="_blank" class="center"><button>Visit iGEM Stockholm</button></a>
+      <div id="activities" class="section">
+        <h1>Activities</h1> 
+        
+        <b>Every year a new team. Every year a stronger foundation.</b>
+        <p>SGEM provides the structure, continuity, and network that connect generations of students in the Stockholm iGEM community.</p>
+
+        <div id="cycle">
+          <div class="arrow up"></div>
+          <div class="turn top"></div>
+          <div class="turn bottom"></div>
+
+          <div>
+            <h2><i class="fa-solid fa-people-group"></i> Recruitment</h2>
+            <b>The cycle begins with a new team.</b>
+            <p>Each year, we bring together motivated and curious students from diverse academic backgrounds to build a strong, balanced iGEM team.</p>
+            <div class="arrow down"></div>
+          </div>
+          
+          <div>
+            <h2><i class="fa-solid fa-handshake"></i> Connection</h2>
+            <b>Strong teams grow through trust.</b>
+            <p>In an open and inclusive environment, we help the team thrive, connect, and build team spirit.</p>
+            <div class="arrow down round"></div>
+          </div>
+          
+          <div>
+            <h2><i class="fa-solid fa-chalkboard"></i> Mentorship</h2>
+            <b>Strong ideas build on experience.</b>
+            <p>Through workshops and discussions, we guide the team in developing their ideas and refining their strategy.</p>
+            <div class="arrow down round"></div>
+          </div>
+          
+          <div>
+            <h2><i class="fa-solid fa-file-lines"></i> Structure</h2>
+            <b>Maintenance eases the transition.</b>
+            <p>We provide the legal and administrative framework behind the project, ensuring finances, formal responsibilities, and long-term continuity.</p>
+            <div class="arrow down round"></div>
+          </div>
+          
+          <div>
+            <h2><i class="fa-solid fa-landmark"></i> Foundation</h2>
+            <b>The foundation grows stronger with every team.</b>
+            <p>By connecting students, alumni, researchers, and partners, we preserve knowledge and support new teams year after year.</p>
+            <div class="arrow down round"></div>
+          </div>
+          
+          <div>
+            <h2><i class="fa-solid fa-globe"></i> Expansion</h2>
+            <b>Reaching outward strengthens what's already there.</b>
+            <p>Through outreach and external connections, we build on existing resources, partnerships, and opportunities that further support the team.</p>
+            <div class="arrow down round"></div>
+          </div>
+        </div>
+        
+        <b>Curious how your SGEM journey could look like?</b>
+        <div id="gallery-carousel" class="carousel"></div> <!-- autofilled from images/images.json -->
+
+      </div>
+
+      <div id="join" class="section">
+        <h1>Join</h1>
+        <p>Feel inspired by what we do and would like to become part of the community? Join SGEM and contribute to a growing network of students and professionals passionate about synthetic biology.</p>
+        <p>As a member of SGEM, you can gain hands-on experience in event organisation, communications, and mentoring, connect with a supportive network, and take part in social, networking, and outreach opportunities across the life sciences and related fields.</p>
+        <p>Ready to start your journey?</p>
+
+        <div id="join-form" class="center">
+          <b><i class="fa-solid fa-file-contract"></i>  1. Fill in the form</b>
+          <a href="https://ebas.ungaforskare.se/blimedlem/sgem" target="_blank" class="center"><button>Join SGEM</button></a>
+  
+          <b><i class="fa-solid fa-credit-card"></i>  2. Complete the payment</b>
+          <p>Membership is open on a rolling basis and costs 50 SEK per year.</p>
+  
+          <b><i class="fa-solid fa-envelope"></i>  3. Join our Slack, Drive and Calendar</b>
+          <p>Shortly after registration, you'll receive access to SGEM's Slack, Drive, and Calendar. If you don't receive an email, please contact us.</p>
+  
+          <b class="center">Congrats — you're now a member of SGEM!</b>
+        </div>
+
+        <b>Want to compete in the iGEM Competition?</b>
+        <p>If you are a student in Stockholm, then become a part of our iGEM Stockholm team! For more details, visit <a href="https://igem.se/" target="_blank">igem.se</a></p>
       </div>
 
       <div id="members" class="section">
         <h1>Members</h1>
-        <p>Coming soon!</p>
+        <div id="member-cards"></div>
       </div>
       
       <div id="contact" class="section">
         <h1>Contact</h1>
-        <p>If you want to know more about SGEM, iGEM Stockholm or collaborations we would be very happy if you would get in touch with us at <a href="mailto:sgem@igem.se">sgem@igem.se</a>. To stay updated just follow iGEM Stockholm on <a href="https://www.facebook.com/igemstockholm/">Facebook</a> or <a href="https://www.instagram.com/igemstockholm/">Instagram</a>!</p>
+        <p>Any questions or wish to collaborate? Reach out to us via <a href="mailto:sgem@igem.se">sgem@igem.se</a>. Follow us on <a href="https://www.linkedin.com/company/stockholm-genetically-engineered-machines/">LinkedIn</a> and <a href="https://www.instagram.com/sgem.stockholm">Instagram</a>!</p>
       </div>
 
     </div>
@@ -92,6 +166,12 @@
   </div>
 
   <div class="footer center">
+    <p>Follow SGEM on</p>
+    <div id="socials" class="row">
+      <a href="https://www.instagram.com/sgem.stockholm" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/stockholm-genetically-engineered-machines/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:sgem@igem.se" target="_blank"><i class="fa-solid fa-at"></i></a>
+    </div>
     <div id="credits" class="row wrap">
       <a id="sponsor" href="https://labbutrustning.se/" target="_blank">Sponsored by Labbutrustning</a>
       <p>|</p>

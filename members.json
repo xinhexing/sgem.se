@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Joel Tekoniemi",
+        "role": "President",
+        "bio": "I started my iGEM journey as a naive third year student, ended up doing it twice, and here I am representing the amazing team Stockholm alumni as president of SGEM! Now, my goal is that future Stockholm iGEMers can have the same opportunity that I had, and hopefully an even better one.",
+        "img": "images/member_joel_tekoniemi.jpg",
+        "linkedin": "www.linkedin.com/in/joeltekoniemi"
+    },
+    {
+        "name": "Daniela Weh",
+        "role": "Vice-president",
+        "bio": "Luckily, I stumbled upon the iGEM infobooth during my master's onboarding. Back then, I had no idea what synthetic biology even was… and now we're organizing workshops about it! As Vice President of SGEM, I want to spark and support similar journeys for others — creating spaces to explore, learn a ton, and meet some truly amazing people along the way.",
+        "img": "images/member_daniela_weh.jpg",
+        "linkedin": "https://www.linkedin.com/in/daniela-weh"
+    },
+    {
+        "name": "Victoria Muliadi",
+        "role": "Treasurer",
+        "img": "images/member_victoria_muliadi.jpg",
+        "linkedin": "https://www.linkedin.com/in/victoria-muliadi-3a319b177/"
+    },
+    {
+        "name": "Aishwarya Sajimon",
+        "role": "Secretary",
+        "img": "images/member_aishwarya_sajimon.jpg",
+        "linkedin": "https://www.linkedin.com/in/aishwarya-sajimon/"
+    },
+    {
+        "name": "Felix Falk",
+        "img": "images/member_felix_falk.jpg",
+        "linkedin": "https://www.linkedin.com/in/falkfelix/"
+    },
+    {
+        "name": "Praghadhesh Thiagarajan",
+        "img": "images/member_praghadhesh_thiagarajan.jpg",
+        "linkedin": "https://www.linkedin.com/in/praghadhesh-thiagarajan/"
+    },
+    {
+        "name": "Tzu Hua Chu",
+        "img": "images/member_tzu_hua_chu.jpg",
+        "linkedin": "https://www.linkedin.com/in/tzu-hua-chu"
+    },
+    {
+        "name": "Ulysse Castet",
+        "img": "images/member_ulysse_castet.jpg",
+        "linkedin": "https://www.linkedin.com/in/ulysse-castet/"
+    },
+    {
+        "name": "Xinhe Xing",
+        "img": "images/member_xinhe_xing.jpg",
+        "linkedin": "https://www.linkedin.com/in/xinhe-xing-a930b11ba/"
+    }
+]

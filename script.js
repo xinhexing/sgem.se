@@ -1,7 +1,113 @@
-// Reload reset page position
 
-window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
+document.addEventListener('DOMContentLoaded', function() {
+    
+    function loadJSON(url, callback) {
+        fetch(url)
+        .then(response => response.json())
+        .then(data => callback(data))
+        .catch(error => console.error('Error loading JSON:', error));
+    }
+
+    // Gallery
+    
+    function addImages(data) {
+        const divGalleryCarousel = document.getElementById('gallery-carousel');
+
+        data.forEach(function(item) {
+            const divImg = document.createElement('div');
+            divImg.className = 'carousel-cell';
+            const img = document.createElement('img');
+            img.src = 'images/' + item.img;
+            divImg.appendChild(img);
+            if (item.text) {
+                img.alt = item.text;
+                const caption = document.createElement('p');
+                caption.className = 'caption';
+                caption.textContent = item.text;
+                divImg.appendChild(caption);
+            }
+            divGalleryCarousel.appendChild(divImg);
+        });
+
+        new Flickity(divGalleryCarousel, {
+            wrapAround: true,
+            autoPlay: true,
+        });
+    }
+    loadJSON('images/gallery.json', addImages);
+
+    // Member cards
+
+    function addMemberCards(data) {
+        const divMemberCards = document.getElementById('member-cards');
+
+        data.forEach(function(memberDict) {
+            const memberCard = document.createElement('div');
+            memberCard.className = 'member-card';
+            divMemberCards.appendChild(memberCard);
+
+            // Name
+            const name = document.createElement('h2')
+            name.id = 'name';
+            name.textContent = memberDict.name;
+            
+            // Role
+            const role = document.createElement('p');
+            role.id = 'role';
+            role.textContent = memberDict.role || 'Board member';
+
+            // Image
+            const img = document.createElement('img')
+            img.id = 'img';
+            img.src = memberDict.img || 'images/igem_official_black_full.png';
+            img.alt = memberDict.name;
+            
+            // Bio
+            let bio = null;
+            if (memberDict.bio) {
+                bio = document.createElement('p');
+                bio.id = 'bio';
+                bio.textContent = memberDict.bio;
+            }
+            
+            // LinkedIn
+            let link = null;
+            if (memberDict.linkedin) {
+                link = document.createElement('a');
+                link.id = 'linkedin';
+                link.href = memberDict.linkedin;
+                link.target = '_blank';
+                const button = document.createElement('button');
+                button.innerHTML = '<i class="fa-brands fa-linkedin"></i> LinkedIn';
+                link.appendChild(button);
+            }
+
+            if (bio) {
+                const topDiv = document.createElement('div');
+                topDiv.classList.add('top');
+                memberCard.appendChild(topDiv);
+                topDiv.appendChild(name);
+                topDiv.appendChild(role);
+                memberCard.classList.add('full'); // Full width if no bio
+                const leftDiv = document.createElement('div');
+                leftDiv.classList.add('left');
+                memberCard.appendChild(leftDiv);
+                leftDiv.appendChild(img);
+                if (link) {leftDiv.appendChild(link);}
+                const rightDiv = document.createElement('div');
+                rightDiv.classList.add('right');
+                memberCard.appendChild(rightDiv);
+                rightDiv.appendChild(bio);
+            } else {
+                memberCard.classList.add('compact');
+                memberCard.appendChild(name);
+                memberCard.appendChild(role);
+                memberCard.appendChild(img);
+                if (link) {memberCard.appendChild(link);}
+            }
+        }); 
+    }
+    loadJSON('members.json', addMemberCards);
 });
 
 
