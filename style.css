@@ -170,8 +170,7 @@ body {
     z-index: 0;
     p, b {margin-left: 4rem;}
     h2 {
-        margin-left: 1rem;
-        padding: 0.3rem;
+        margin-left: 1rem; padding: 0.3rem;
         background: linear-gradient(to right, var(--light_grey) 40%, var(--white) 70%);
         border-radius: 1rem 0 0 0;
         i {
@@ -179,46 +178,44 @@ body {
             width: 2rem; height: 1.5rem;
         }
     }
-    .arrow {
-        position: absolute; top: 0; left: 0; z-index: -1;
-        width: 2rem;
-        &.down {
-            height: 100%;
-            background: var(--light_grey);
-            &.round {border-radius: 1rem 1rem 0 0;}
-            left: 1rem;
-                &::after {
-                content: "";
-                position: absolute; top: 100%;
-                border-left: 1rem solid transparent;
-                border-right: 1rem solid transparent;
-                border-top: 0.5rem solid var(--light_grey);
-            }
-        }
-        &.up {
-            height: 100%;
-            background: linear-gradient(
-                to bottom,
-                var(--light_grey) 0%,
-                var(--dark_grey) 5%,
-                var(--dark_grey) 95%,
-                var(--light_grey) 100%
-            );
-        }
-    }
-    .turn {
+
+    /* Arrows */
+
+    *&::before, *&::after, div::before, div::after {
+        content: "";
         position: absolute; z-index: -1;
+    }
+    
+    /* Up arrow */
+    &::before {
+        top: 0; left: 0; z-index: -1;
+        width: 2rem; height: 100%;
+        background: linear-gradient(to bottom, var(--light_grey) 0%, var(--dark_grey) 5%, var(--dark_grey) 95%, var(--light_grey) 100%);
+    }
+
+    /* Caps */
+    &::after {
+        top: -1.5rem; left: 0; z-index: -1;
+        width: 3rem; height: calc(100% + 3rem);
+        background:
+            linear-gradient(var(--light_grey), var(--light_grey)) top/100% 1.5rem no-repeat,
+            linear-gradient(var(--light_grey), var(--light_grey)) bottom/100% 1.5rem no-repeat;
+        border-radius: 1.5rem;
+    }
+    
+    /* Down arrows */
+    div::before {
+        top: 0; left: 1rem; z-index: -1;
+        width: 2rem; height: 100%;
         background: var(--light_grey);
-        &.top {
-            top: -1.5rem; left: 0;
-            width: 3rem; height: 1.5rem;
-            border-radius: 1.5rem 1.5rem 0 0;
-        }
-        &.bottom {
-            top: 100%; left: 0;
-            width: 3rem; height: 1.5rem;
-            border-radius: 0 0 1.5rem 1.5rem;
-        }
+        border-radius: 1rem 1rem 0 0;
+    }
+    div:first-of-type::before {border-radius: 0;}
+    div::after {
+        top: 100%; left: 1rem;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-top: 0.5rem solid var(--light_grey);
     }
 }
 
